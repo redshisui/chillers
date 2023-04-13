@@ -1,0 +1,114 @@
+  <cabeza>
+    
+    
+    <link rel="stylesheet" href="estilo.css">
+      <script src="javascript.js"></script>
+  </cabeza>
+     <body onload="tablas()">
+  
+
+        <h1>Distrito Térmico</h1>
+        <br>
+        <button onclick="paso1()" class="button" id="button">Tamaño DT</button>
+        <br>
+        <button onclick="paso2()" class="button" id="button">Chillers</button>
+        <div id="imprimir">
+       <button onclick="tabla(totalc,totala)" class="button" id="button">Mostrar datos</button>
+        </Div>
+
+       
+        <h2>Tabla centrifugoss
+      <table id="centri" border="3" bordercolor="blue" cellspacing="2">
+      </h2>
+    <cabeza>
+        <Tr>
+          <th>Energía</th>
+          <th>Emisiones CO2</th>
+          <th>Capex</th>
+          <th>Opex</th>
+        </Tr>
+      </cabeza>
+      <tbody>
+        <Tr>
+          <th>Red pública</th>
+          <td id="rpc"></td>
+          <td id="capexc"></td>
+          <td id="oc"></td>
+        </Tr>
+        <Tr>
+          <th>Microturbina a gas</th>
+          <td id="gc"></td>
+          <td id="cc"></td>
+          <td id="oc"></td>
+        </Tr>
+        <Tr>
+          <th>Solar fotovoltaica</th>
+          <td id="0"></td>
+          <td id="ftc"></td>
+        </Tr>
+        <Tr>
+          <th>Energía eolica</th>
+          <td id="0"></td>
+          <td id="ec"></td>
+          <td id="oc"></td>
+        </Tr>
+        <tr>
+          <th>Energía biomasa</th>
+          <td id="0"></td>
+          <td id="bc"></td>
+          <td id="oc"></td>
+        </tr>
+        <tr>
+          <th>Toneladas de refrigeración que suministran los chillers centrifugos:</th>
+          <td id="totalc"></td>
+          <td id="0"></td>
+          <td id="0"></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <h2>Tabla absorción
+      <table id="abso" border="3" bordercolor="green" cellspacing="2">
+      </h2>
+      <thead>
+        <tr>
+          <th>Energía</th>
+          <th>Emisiones CO2</th>
+          <th>Capex</th>
+          <th>Opex</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Microturbina a gas</th>
+          <td id="ga"></td>
+          <td id="ca"></td>
+          <td id="oa"></td>
+        </tr>
+        <tr>
+          <th>Solar térmica</th>
+          <td id="0"></td>
+          <td id="capexa"></td>
+          <td id="oa"></td>
+        </tr>
+        <tr>
+          <th>Energía biomasa</th>
+          <td id="0"></td>
+          <td id="ba"></td>
+          <td id="oa"></td>
+        </tr>
+        <tr>
+          <th>Toneladas de refrigeración que suministran los chillers de absorción:</th>
+          <td id="totala"></td>
+          <td id="0"></td>
+          <td id="0"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  
+  
+</body>
+</html>
